@@ -17,7 +17,7 @@ Member properties
 * On the member summary page, I should be able to click a button that navigates to a member detail form
 * The member detail form should include fields for each of the member properties above
 * Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
-* Create a Pull-Request with the new feature
+* Create a Pull-Request from `dev` into `master` with the new feature
 
 ## Development Environment 
 
