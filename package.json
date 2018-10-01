@@ -8,10 +8,12 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start": "npm-run-all -p client-prod server json-server",
-    "start-dev": "npm-run-all -p json-server server ng-serve",
+    "start-dev": "npm-run-all -p client-dev json-server",
     "json-server": "json-server db.json",
-    "ng-serve": "ng serve",
-    "server": "nodemon server.js"
+    "client-dev": "ng serve",
+    "client-prod": "ng build --prod",
+    "server": "nodemon server.js",
+    "server-dev": "npm-run-all json-server server"
   },
   "private": true,
   "dependencies": {
