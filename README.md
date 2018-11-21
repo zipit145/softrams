@@ -7,23 +7,27 @@ Welcome to the Softrams Racing Team Trials where you'll be tested on your develo
 As a user, I need to be able to add a member to the organization so that I can keep track of each team roster.
 
 Member properties
-- First Name
-- Last Name
-- Job Title
-- Status
-- Team
+
+1. First Name
+2. Last Name
+3. Job Title
+4. Status
+5. Team
 
 ### Acceptance Criteria
+* Create a feature branch named after your Github user name
+  * Ex, `Whamo12`
 * On the member summary page, I should be able to click a button that navigates to a member detail form
 * The member detail form should include fields for each of the member properties above
 * Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
-* Create a Pull-Request from `dev` into `master` with the new feature
+* Create a pull request off your feature branch
 
 ## Development Environment 
 
 * [Express](https://expressjs.com/)
 * [Angular CLI](https://cli.angular.io/)
 * [json-server](https://github.com/typicode/json-server)
+  * A full fake REST API
 
 ## Running the Application
 
@@ -43,3 +47,6 @@ Application will run on [localhost:4200](http://localhost:4200)
 
 _Please Note:  To have Angular call `json-server` directly, set `DEBUG` to `true` in [app.service.ts](./src/app/app.service.ts)_
 
+## Submit a Pull Request
+
+Once you have pushed the completed work to your feature branch, submit a pull request which will then be reviewed by our development team.
