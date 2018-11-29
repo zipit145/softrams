@@ -15,12 +15,11 @@ Member properties
 5. Team
 
 ### Acceptance Criteria
-* Create a feature branch named after your Github user name
-  * Ex, `Whamo12`
+* Clone the repo
 * On the member summary page, I should be able to click a button that navigates to a member detail form
 * The member detail form should include fields for each of the member properties above
 * Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
-* Create a pull request off your feature branch
+* Create a Zip from the updated source code and send it to your point of contact for review
 
 ## Development Environment 
 
