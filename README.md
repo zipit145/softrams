@@ -19,7 +19,11 @@ Member properties
 * On the member summary page, I should be able to click a button that navigates to a member detail form
 * The member detail form should include fields for each of the member properties above
 * Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
+* Each member should be updatable
+* Each member can be removed
 * Create a Zip from the updated source code and send it to your point of contact for review
+
+_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
 
 ## Development Environment 
 
