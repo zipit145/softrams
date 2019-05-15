@@ -21,6 +21,7 @@ Member properties
 * Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
 * Each member should be updatable
 * Each member can be removed
+* Angular unit tests should pass
 * Create a Zip from the updated source code and send it to your point of contact for review
 
 _Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
