@@ -50,7 +50,3 @@ Application will run on [localhost:4200](http://localhost:4200)
 `npm run start-dev`
 
 _Please Note:  To have Angular call `json-server` directly, set `DEBUG` to `true` in [app.service.ts](./src/app/app.service.ts)_
-
-## Submit a Pull Request
-
-Once you have pushed the completed work to your feature branch, submit a pull request which will then be reviewed by our development team.
