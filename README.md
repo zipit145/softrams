@@ -15,16 +15,18 @@ Member properties
 5. Team
 
 ### Acceptance Criteria
-* Clone the repo
-* On the member summary page, I should be able to click a button that navigates to a member detail form
-* The member detail form should include fields for each of the member properties above
-* Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
+* On the member summary page, I should be able to navigate to and from the member detail page
+* The member detail form should include fields for each of the member properties
+* Saving the member should redirect me back to the member summary page where I should see the new member listed on the table
 * Each member should be updatable
-* Each member can be removed
-* Angular unit tests should pass
-* Create a Zip from the updated source code and send it to your point of contact for review
+* Each member should be removable
+* **Angular unit tests _should_ pass locally**
 
 _Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
+
+## On Completion
+* Create a Zip from the updated source code and send it to your point of contact for review
+	* _Please delete the node_modules directory before compressing_
 
 ## Development Environment 
 
