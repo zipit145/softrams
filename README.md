@@ -39,13 +39,13 @@ _Remember this simulates a mini "Full-Stack" web application so be sure to devel
 
 Review the available scripts in the [package.json](package.json)   
 
-### Run in Production Mode
+## Run in Production Mode
 
 Application will run on [localhost:8000](http://localhost:8000)
 
 `npm start`
 
-### Run in Development Mode
+## Run in Development Mode
 
 Application will run on [localhost:4200](http://localhost:4200)
 
