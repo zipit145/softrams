@@ -24,7 +24,7 @@ Member properties
 
 _Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
 
-## On Completion
+### On Completion
 * Create a Zip from the updated source code and send it to your point of contact for review
 	* _Please delete the node_modules directory before compressing_
 
