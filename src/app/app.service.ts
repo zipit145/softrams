@@ -12,6 +12,7 @@ export class AppService {
   // If true, the application will utilize node API
   DEBUG: Boolean = true;
   api: string;
+  username: string;
 
   constructor(private http: HttpClient) {
     if (this.DEBUG) {

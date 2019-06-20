@@ -1,4 +1,9 @@
 <div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <p *ngIf="appService.username">Welcome {{ appService.username }}, <a routerLink="/login">logout</a></p>
+    </div>
+  </div>
   <button id="addMemberButton" class="btn btn-primary pull-right" (click)="goToAddMemberForm()">Add Member</button>
   <table class="table">
     <thead>
