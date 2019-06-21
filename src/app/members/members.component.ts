@@ -20,6 +20,10 @@ export class MembersComponent implements OnInit {
     console.log(`Hmmm...we didn't navigate anywhere`);
   }
 
+  logout() {
+    this.appService.username = '';
+    this.router.navigate(['/login']);
+  }
   editMemberByID(id: number) {}
 
   deleteMemberById(id: number) {}
