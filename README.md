@@ -22,7 +22,10 @@ Member properties
 * Each member should be removable
 * **Angular unit tests _should_ pass locally**
 
-_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
+_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client
+
+### Bonus section
+* I should not be able to navigate to members page without being logged on
 
 ### On Completion
 * Create a Zip from the updated source code and send it to your point of contact for review
@@ -43,11 +46,15 @@ Review the available scripts in the [package.json](package.json)
 
 Application will run on [localhost:8000](http://localhost:8000)
 
+Enter any username and password to login
+
 `npm start`
 
 ## Run in Development Mode
 
 Application will run on [localhost:4200](http://localhost:4200)
+
+Enter any username and password to login
 
 `npm run start-dev`
 
