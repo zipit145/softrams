@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 export class MembersComponent implements OnInit {
   members = [];
 
-  constructor(private appService: AppService, private router: Router) {}
+  constructor(public appService: AppService, private router: Router) {}
 
   ngOnInit() {
-    this.appService.getMembers().subscribe((members) => (this.members = members));
+    this.appService.getMembers().subscribe(members => (this.members = members));
   }
 
   goToAddMemberForm() {
