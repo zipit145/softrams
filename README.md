@@ -15,15 +15,21 @@ Member properties
 5. Team
 
 ### Acceptance Criteria
-* Clone the repo
-* On the member summary page, I should be able to click a button that navigates to a member detail form
-* The member detail form should include fields for each of the member properties above
-* Saving the member should redirect me back to the member summary page where I should see the new user listed on the table
+* On the member summary page, I should be able to navigate to and from the member detail page
+* The member detail form should include fields for each of the member properties
+* Saving the member should redirect me back to the member summary page where I should see the new member listed on the table
 * Each member should be updatable
-* Each member can be removed
-* Create a Zip from the updated source code and send it to your point of contact for review
+* Each member should be removable
+* **Angular unit tests _should_ pass locally**
 
-_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
+_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client
+
+### Bonus section
+* I should not be able to navigate to members page without being logged on
+
+### On Completion
+* Create a Zip from the updated source code and send it to your point of contact for review
+	* _Please delete the node_modules directory before compressing_
 
 ## Development Environment 
 
@@ -36,20 +42,20 @@ _Remember this simulates a mini "Full-Stack" web application so be sure to devel
 
 Review the available scripts in the [package.json](package.json)   
 
-### Run in Production Mode
+## Run in Production Mode
 
 Application will run on [localhost:8000](http://localhost:8000)
 
+Enter any username and password to login
+
 `npm start`
 
-### Run in Development Mode
+## Run in Development Mode
 
 Application will run on [localhost:4200](http://localhost:4200)
+
+Enter any username and password to login
 
 `npm run start-dev`
 
 _Please Note:  To have Angular call `json-server` directly, set `DEBUG` to `true` in [app.service.ts](./src/app/app.service.ts)_
-
-## Submit a Pull Request
-
-Once you have pushed the completed work to your feature branch, submit a pull request which will then be reviewed by our development team.
