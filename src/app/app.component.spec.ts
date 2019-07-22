@@ -4,12 +4,13 @@ import { BannerComponent } from './banner/banner.component';
 import { APP_BASE_HREF } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent, BannerComponent],
-      imports: [RouterModule.forRoot([])],
+      imports: [RouterModule.forRoot([]), HttpClientTestingModule],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
     }).compileComponents();
   }));

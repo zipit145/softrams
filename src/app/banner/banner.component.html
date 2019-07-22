@@ -5,3 +5,11 @@
     <p class="lead">Redefining digital frontiers.</p>
   </div>
 </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <p *ngIf="appService.username" class="welcome">Welcome {{ appService.username }}, <span (click)="logout()" class="logout text-primary">logout here</span></p>
+    </div>
+  </div>
+</div>
+

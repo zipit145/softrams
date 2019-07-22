@@ -27,9 +27,15 @@ export class AppService {
     return this.http.get(`${this.api}/members`).pipe(catchError(this.handleError));
   }
 
-  addMember(memberForm) {}
+  setUsername(name: string): void {
+    this.username = name;
+  }
 
-  getTeams() {}
+  addMember(memberForm) {
+  }
+
+  getTeams() {
+  }
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
