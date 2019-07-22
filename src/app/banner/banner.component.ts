@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService, private router: Router) { }
 
   ngOnInit() {
+  }
+
+  logout() {
+    this.appService.username = '';
+    localStorage.removeItem('username');
+    this.router.navigate(['/login']);
   }
 
 }
