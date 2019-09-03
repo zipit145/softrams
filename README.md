@@ -15,17 +15,19 @@ Member properties
 5. Team
 
 ### Acceptance Criteria
+* **Angular unit tests _should_ pass locally**
 * On the member summary page, I should be able to navigate to and from the member detail page
 * The member detail form should include fields for each of the member properties
 * Saving the member should redirect me back to the member summary page where I should see the new member listed on the table
 * Each member should be updatable
 * Each member should be removable
-* **Angular unit tests _should_ pass locally**
 
-_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client
-
-### Bonus section
+### BONUS Acceptance Criteria 
 * I should not be able to navigate to members page without being logged on
+* The member detail form should have client-side validation
+* The member detail form should have server-side validation
+
+_Remember this simulates a mini "Full-Stack" web application so be sure to develop for both server and client_
 
 ### On Completion
 * Create a Zip from the updated source code and send it to your point of contact for review
