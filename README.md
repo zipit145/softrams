@@ -15,7 +15,7 @@ Member properties
 5. Team
 
 ### Acceptance Criteria
-* **Angular unit tests _should_ pass locally**
+* **Angular unit tests should pass with code coverage of at least 80% on all files **
 * On the member summary page, I should be able to navigate to and from the member detail page
 * The member detail form should include fields for each of the member properties
 * Saving the member should redirect me back to the member summary page where I should see the new member listed on the table

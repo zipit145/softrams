@@ -8,16 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
+  constructor(public appService: AppService, private router: Router) {}
 
-  constructor(private appService: AppService, private router: Router) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   logout() {
     this.appService.username = '';
     localStorage.removeItem('username');
     this.router.navigate(['/login']);
   }
-
 }
