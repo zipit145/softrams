@@ -3,17 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build",
-    "test": "ng test",
+    "build": "ng build --prod",
+    "test": "ng test --watch=false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "npm-run-all -p client-prod server json-server",
-    "start-dev": "npm-run-all -p client-dev json-server",
-    "json-server": "json-server db.json",
-    "client-dev": "ng serve",
-    "client-prod": "ng build --prod",
-    "server": "nodemon server.js",
-    "server-dev": "npm-run-all json-server server"
+    "start": "npm-run-all -p build server db",
+    "start-dev": "npm-run-all -p client server db",
+    "db": "json-server db.json",
+    "client": "ng serve",
+    "server": "nodemon server.js"
   },
   "private": true,
   "dependencies": {
@@ -56,6 +54,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "nodemon": "^1.19.2",
     "protractor": "~5.4.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
