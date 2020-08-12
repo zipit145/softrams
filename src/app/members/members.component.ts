@@ -17,10 +17,10 @@ export class MembersComponent implements OnInit {
   }
 
   goToAddMemberForm() {
-    console.log(`Hmmm...we didn't navigate anywhere`);
+    this.router.navigate(['/memberdetails'])
   }
-
-  editMemberByID(id: number) {}
-
-  deleteMemberById(id: number) {}
+  goToMemberDetails(id) {
+    console.log("inside page specific click event", id)
+    this.router.navigate(['/memberdetails', id])
+  }
 }

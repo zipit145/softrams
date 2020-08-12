@@ -61,3 +61,10 @@ Enter any username and password to login
 `npm run start-dev`
 
 _Please Note:  To have Angular call `json-server` directly, set `DEBUG` to `true` in [app.service.ts](./src/app/app.service.ts)_
+
+## Applicant Notes
+I ran out of time on this. I wanted to bring my tests up to higher coverage, style the new buttons added to the member details page, run through lint errors, inifite testing loop issue on submit, and resolve the errors for post and put.
+
+I tried to prioritize my work here and set a time limit for what I would spend on this. As a result of that I focused on getting basic functionality complete, then moving on to tests. I skipped small bits of functionality to make some of my testing scenarios easier.
+
+My goal is to give you an accurate representation of my skills and the effort required for this. I would love to be considered for this role and just have a conversation. I really like this stack and think this is a great technical take home excercise. I have done several of these and this seems well thought out. I am confident with a little bit of support through code reviews I could get up to speed and be a contributing member of the team.

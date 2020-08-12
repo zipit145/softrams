@@ -2,19 +2,22 @@
   <h3 class="text-center lead">Add Member to Racing Team</h3>
   <br />
   <!--Template Driven Form or Model Driven Form?-->
-  <form (ngSubmit)="onSubmit(memberForm)">
+  <form [formGroup]="memberForm" (ngSubmit)="onSubmit(memberForm)">
     <div>
       <div class="row">
         <div class="col-md-6">
           <input
+            formControlName="firstName"
             type="text"
             class="form-control"
             id="firstName"
             placeholder="First Name"
           />
+          <div *ngIf="memberForm.controls['firstName'].invalid">first name validation test</div>
         </div>
         <div class="col-md-6">
           <input
+            formControlName="lastName"
             type="text"
             class="form-control"
             id="lastName"
@@ -26,6 +29,7 @@
       <div class="row">
         <div class="col-md-6">
           <input
+            formControlName="jobTitle"
             type="text"
             class="form-control"
             id="jobTitle"
@@ -33,7 +37,7 @@
           />
         </div>
         <!--We may have to make a service call to get this list-->
-        <select id="team" class="col-md-6 custom-select">
+        <select id="team" class="col-md-6 custom-select" formControlName="team">
           <option *ngFor="let team of teams">{{ team.teamName }}</option>
         </select>
       </div>
@@ -41,17 +45,26 @@
       <div class="form-group col-md-6">
         <div class="row">
           <label id="activeStatus" class="md-check lead">
-            <input type="radio" value="Active" name="status" /> Active
+            <input type="radio" value="Active" name="status" formControlName="status"/> Active
           </label>
           <label class="md-check lead">
-            <input type="radio" value="Inactive" name="status" /> Inactive
+            <input type="radio" value="Inactive" name="status" formControlName="status"/> Inactive
           </label>
         </div>
       </div>
     </div>
     <!--Disable if form is invalid-->
-    <button type="submit" class="btn btn-primary pull-right">
+    <button type="submit" id="submit" class="btn btn-primary pull-right" [disabled]="memberForm.invalid">
       Save Member
+    </button>
+    <button type="button" id="back" class="btn btn-primary pull-left" (click)="goToMembersPage()">
+      Back To Members Page
+    </button>
+    <button *ngIf="employeeInformation" id="edit" type="button" class="btn btn-primary pull-left" (click)="onPut(employeeInformation.id, memberForm)">
+      Edit this employee
+    </button>
+    <button *ngIf="employeeInformation" id="delete" type="button" class="btn btn-primary pull-left" (click)="onDelete(employeeInformation.id, memberForm)">
+      delete this employee
     </button>
   </form>
 </div>

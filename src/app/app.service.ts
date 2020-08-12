@@ -19,13 +19,41 @@ export class AppService {
       .pipe(catchError(this.handleError));
   }
 
+  getMember(memberID) {
+    return this.http
+      .get(`${this.api}/members/${memberID}`)
+      .pipe(catchError(this.handleError));
+  }
+
+  editMember(memberID, memberForm) {
+    return this.http
+      .put(`${this.api}/members/${memberID}`, memberForm)
+      .pipe(catchError(this.handleError))
+      .subscribe();
+  }
+
+  deleteMember(memberID) {
+    return this.http
+      .delete(`${this.api}/members/${memberID}`)
+      .pipe(catchError(this.handleError))
+      .subscribe();
+  }
+
   setUsername(name: string): void {
     this.username = name;
   }
 
-  addMember(memberForm) {}
+  addMember(memberForm) {
+    return this.http.post(`${this.api}/addMember`, memberForm)
+      .pipe(catchError(this.handleError))
+      .subscribe();
+  }
 
-  getTeams() {}
+  getTeams() {
+    return this.http
+      .get(`${this.api}/teams`)
+      .pipe(catchError(this.handleError));
+  }
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
